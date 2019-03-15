@@ -1,98 +1,79 @@
-* 
+*
   box-sizing: border-box
 
-
-.row::after 
+.row::after
   content: ""
   clear: both
   display: table
 
-
-[class*="col-"] 
+[class*="col-"]
   float: left
   padding: 15px
 
-
-html 
+html
   font-family: 'Ubuntu', sans-serif
 
+/* For mobile phones:
 
-/* For mobile phones: */
-
-.header 
+.header
   overflow: hidden
   background-color: #fff
   position: relative
-  .icon 
+  .icon
     color: red
     text-decoration: none
     padding: 14px 16px
     font-size: 17px
     display: block
-  
-  a.icon 
+  a.icon
     display: block
     position: absolute
     top: 0
     padding: 14px 16px 0
-  
 
-
-.cart 
+.cart
   display: block
   position: absolute
   top: 0
   padding: 14px 16px 0
 
-
-.header 
-  a.icon 
+.header
+  a.icon
     left: 0
-  
-  #options 
-    .language 
+  #options
+    .language
       display: flex
-    
     display: none
-    a 
+    a
       color: #7A7A7A
       padding: 14px
       text-decoration: none
       font-size: 17px
       display: block
-      &:first-child 
+      &:first-child
         display: flex
         align-items: center
-        span 
+        span
           margin-left: 10px
-        
-      
-    
-  
   overflow: hidden
   position: relative
-  a 
-    &.icon 
+  a
+    &.icon
       display: block
       position: absolute
       right: 0
       top: 0
-    
-    &:hover 
+    &:hover
       color: black
-    
-  
 
-
-.active 
+.active
   background-color: #4CAF50
   color: blue
 
-
-.header .search 
+.header .search
   position: relative
   padding: 0 15px 15px
-  input 
+  input
     border-width: 0
     border-bottom: 1px solid #7A7A7A
     font-size: 16px
@@ -101,82 +82,67 @@ html
     margin-bottom: 20px
     padding-bottom: 10px
     width: 100%
-    &:focus 
+    &:focus
       outline: none
       border-bottom-color: #2EC4B6
       transition: .8s all
-    
-  
-  svg 
+  svg
     float: right
     position: absolute
     top: 15px
     right: 15px
-  
 
-
-.cart 
+.cart
   right: 0
-  span 
+  span
     border-radius: 50%
     background-color: #2EC4B6
     color: #fff
     padding: 0 5px
-  
 
-
-.logo 
+.logo
   display: flex
   align-items: center
   justify-content: center
   padding: 15px 15px 0
 
-
-.menu 
-  ul 
+.menu
+  ul
     list-style-type: none
     margin: 0
     padding: 0
-  
-  li 
+  li
     padding: 8px
     margin-bottom: 7px
     background-color: #33b5e5
     color: #ffffff
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)
-    &:hover 
+    &:hover
       background-color: #0099cc
-    
-  
 
-
-.banner 
+.banner
   position: relative
   height: 30vh
 
-
-.banner-container 
+.banner-container
   height: 34vh
 
-
-.banner 
-  a 
+.banner
+  a
     display: none
-  
-  .slide 
-    img 
+  .slide
+    img
       background: #2EC4B6
       background-blend-mode: multiply
       height: -webkit-fill-available
       width: 100%
-    
-    .caption 
+    .caption
       position: absolute
       padding: 10px 20px
       font-size: 2.125em
       font-weight: bold
       color: #fff
-      p::after 
+      p::after
         content: ""
         width: 44px
         background-color: #FF9F1C
@@ -184,29 +150,23 @@ html
         position: relative
         display: flex
         top: 8px
-      
-    
-  
-  .dots 
+  .dots
     position: relative
     text-align: center
     margin-top: -30px
-    .dot 
+    .dot
       height: 10px
       width: 10px
-    
-  
 
-
-.products 
+.products
   padding: 0 15px
-  h1 
+  h1
     display: block
     color: #011627
     font-size: 24px
     font-weight: bold
     padding: 40px 20px 20px
-    &::after 
+    &::after
       content: ""
       width: 44px
       background-color: #FF9F1C
@@ -214,77 +174,58 @@ html
       position: relative
       display: flex
       top: 8px
-    
-  
-  .slider-products 
+  .slider-products
     min-width: 320px
     overflow: auto
-  
-  .produto 
-    .produto-item 
+  .produto
+    .produto-item
       padding: 10px 15px
-    
-    div 
-      &:first-child 
+    div
+      &:first-child
         padding-left: 0
-      
-      &:last-child 
+      &:last-child
         padding-right: 0
-      
-    
-  
-  .dots-content 
+  .dots-content
     text-align: center
     margin-top: 20px
     margin-bottom: 10px
-  
-  .dots span 
+  .dots span
     font-size: 50px
     width: 10px
     color: #BDBDBD
-    &.active 
+    &.active
       color: #FF9F1C
-    
-  
 
-
-.shelf 
+.shelf
   display: flex
   text-align: center
 
-
-.produto 
+.produto
   max-width: 50%
   display: flex
-  img 
+  img
     width: 100%
     padding: 20px
-  
-  p 
+  p
     text-transform: uppercase
     font-weight: 600
     margin-bottom: 10px
     color: #7A7A7A
-  
-  .oldPrice, .time 
+  .oldPrice, .time
     color: #7A7A7A
-  
-  .oldPrice 
+  .oldPrice
     font-size: 17px
     margin-bottom: 5px
     text-decoration-line: line-through
-  
-  .price 
+  .price
     color: #2EC4B6
     font-size: 22px
     margin-bottom: 10px
     font-weight: 600
-  
-  .time 
+  .time
     font-size: 17px
     margin-bottom: 5px
-  
-  button 
+  button
     display: flex
     justify-content: space-evenly
     align-items: center
@@ -296,20 +237,16 @@ html
     text-transform: uppercase
     padding: 2px 12px
     width: 100%
-  
 
-
-.banner-container 
+.banner-container
   max-width: 599px
   position: relative
   margin: auto
 
-
-.slide 
+.slide
   display: none
 
-
-.prev 
+.prev
   cursor: pointer
   position: absolute
   top: 50%
@@ -323,8 +260,7 @@ html
   border-radius: 0 3px 3px 0
   user-select: none
 
-
-.next 
+.next
   cursor: pointer
   position: absolute
   top: 50%
@@ -340,12 +276,10 @@ html
   right: 0
   border-radius: 3px 0 0 3px
 
-
-.prev:hover, .next:hover 
+.prev:hover, .next:hover
   background-color: rgba(0, 0, 0, 0.8)
 
-
-.text 
+.text
   color: #f2f2f2
   font-size: 15px
   padding: 8px 12px
@@ -354,8 +288,7 @@ html
   width: 100%
   text-align: center
 
-
-.dot 
+.dot
   cursor: pointer
   height: 15px
   width: 15px
@@ -365,50 +298,41 @@ html
   display: inline-block
   transition: background-color 0.6s ease
 
-
-.active, .dot:hover 
+.active, .dot:hover
   background-color: #FF9F1C
 
-
-.fade 
+.fade
   -webkit-animation-name: fade
   -webkit-animation-duration: 1.5s
   animation-name: fade
   animation-duration: 1.5s
 
-
-@-webkit-keyframes fade 
-  from 
+@-webkit-keyframes fade
+  from
     opacity: 0.4
-  
 
-  to 
+  to
     opacity: 1
-  
 
 
-
-@keyframes fade 
-  from 
+@keyframes fade
+  from
     opacity: 0.4
-  
 
-  to 
+  to
     opacity: 1
-  
 
 
-
-.footer 
+.footer
   background-color: #011627
   color: #fff
-  h1 
+  h1
     display: block
     color: #fff
     font-size: 24px
     font-weight: bold
     padding: 40px 20px 20px
-    &::after 
+    &::after
       content: ""
       width: 44px
       background-color: #FF9F1C
@@ -417,24 +341,18 @@ html
       display: flex
       margin-top: 10px
       top: 12px
-    
-  
-  .location 
+  .location
     display: flex
-    .sp, .rj 
+    .sp, .rj
       color: #fff
       width: 50%
       padding: 20px 20px 0
-    
-    .sp p:first-child, .rj p:first-child 
+    .sp p:first-child, .rj p:first-child
       font-size: 20px
       font-weight: bold
-    
-    .sp p, .rj p 
+    .sp p, .rj p
       margin-bottom: 10px
-    
-  
-  a 
+  a
     display: flex
     justify-content: space-evenly
     align-items: center
@@ -451,48 +369,41 @@ html
     padding: 12px
     width: 290px
     height: 60px
-  
-  .by 
+  .by
     width: 290px
     display: flex
     justify-content: space-between
     margin: 0 auto
-    .by-profite img, .by-vtex img 
+    .by-profite img, .by-vtex img
       width: 80px
-    
-  
-  .line 
+  .line
     background-color: #2EC4B6
     height: 5px
     margin-top: 20px
-  
 
-
-/* For desktop: */
-@media (min-width: 768px) 
-  .banner 
+/* For desktop:
+@media (min-width: 768px)
+  .banner
     height: 40vh
     background-color: #011627
-  
-  .banner-container 
+  .banner-container
     height: 40vh
     background-color: #011627
     min-width: 1024px
-  
-  .banner 
-    .slide 
+  .banner
+    .slide
       background-color: #011627
       width: 100%
       height: 40vh
-      .caption 
+      .caption
         position: relative
         width: 50%
-        p 
+        p
           display: flex
           align-items: center
           justify-content: center
           height: 100%
-          &::after 
+          &::after
             content: ""
             width: 44px
             background-color: #FF9F1C
@@ -500,57 +411,41 @@ html
             position: absolute
             top: 25vh
             left: 20px
-          
-        
-      
-      .img 
+      .img
         width: 50%
-      
-    
-    .dots 
+    .dots
       margin-top: -50px
-    
-    .slide img 
+    .slide img
       width: auto
-    
-  
-  .products 
-    h1, .produto 
+  .products
+    h1, .produto
       max-width: 60%
       margin: 0 auto
-    
-    h1 
+    h1
       padding: 40px 0 20px
-    
-    .slider-products 
+    .slider-products
       margin-bottom: 20px
-    
-  
-  .footer 
-    h1 
+  .produto .stars
+    width: 150px
+  .footer
+    h1, .footer-info
       max-width: 60%
       margin: 0 auto
-    
-    .footer-info 
-      max-width: 60%
-      margin: 0 auto
+    h1::after
+      top: 0
+    .footer-info
       display: flex
       align-items: center
       position: relative
-    
-    .contacts 
+    .contacts
       margin-left: 50px
-    
-    a 
+    a
       margin: 25px auto
       width: 265px
-    
-    .by 
+    .by
       width: 230px
       justify-content: space-evenly
       margin: 0
       position: absolute
       right: 0
       bottom: 20px
-    
-  
