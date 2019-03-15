@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [
     {
         "img": "assets/img/tenis.png",
@@ -36,4 +37,44 @@
         "flag": false
     }
 
+=======
+[
+    {
+        "img": "assets/img/tenis.png",
+        "name": "Tênis couro puma r698 q4 v2",
+        "rating": "assets/img/stars.png",
+        "oldPrice": "299,00",
+        "price": "399,00",
+        "time": "3x de R$ 133,00",
+        "flag": false
+    },
+    {
+        "img": "assets/img/tenis.png",
+        "name": "Tênis couro puma r698 q4 v2",
+        "rating": "assets/img/stars.png",
+        "oldPrice": "299,00",
+        "price": "399,00",
+        "time": "3x de R$ 133,00",
+        "flag": true
+    },
+    {
+        "img": "assets/img/tenis.png",
+        "name": "Tênis couro puma r698 q4 v2",
+        "rating": "assets/img/stars.png",
+        "oldPrice": "299,00",
+        "price": "399,00",
+        "time": "3x de R$ 133,00",
+        "flag": false
+    },
+    {
+        "img": "assets/img/tenis.png",
+        "name": "Tênis couro puma r698 q4 v2",
+        "rating": "assets/img/stars.png",
+        "oldPrice": "299,00",
+        "price": "399,00",
+        "time": "3x de R$ 133,00",
+        "flag": false
+    }
+
+>>>>>>> 2991495ce5184070599e14ff1898478c53ad5f8c
 ]
