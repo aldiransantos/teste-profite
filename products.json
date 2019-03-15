@@ -1,38 +1,38 @@
 [
     {
-        "img": "assets/img/tenis.png",
-        "name": "Tênis couro puma r698 q4 v2",
+        "img": "assets/img/black_shoes.png",
+        "name": "Tênis preto puma r698 q4 v2",
         "rating": "assets/img/stars.png",
-        "oldPrice": "299,00",
-        "price": "399,00",
-        "time": "3x de R$ 133,00",
+        "oldPrice": "399,00",
+        "price": "299,00",
+        "time": "3x de R$ 99,66",
         "flag": false
     },
     {
-        "img": "assets/img/tenis.png",
-        "name": "Tênis couro puma r698 q4 v2",
+        "img": "assets/img/blue_shoes.png",
+        "name": "Tênis puma azul adf8 a3 v9",
         "rating": "assets/img/stars.png",
-        "oldPrice": "299,00",
-        "price": "399,00",
-        "time": "3x de R$ 133,00",
+        "oldPrice": "199,00",
+        "price": "139,00",
+        "time": "3x de R$ 46,33",
         "flag": true
     },
     {
-        "img": "assets/img/tenis.png",
-        "name": "Tênis couro puma r698 q4 v2",
+        "img": "assets/img/running_shoes.png",
+        "name": "Tênis nike runnig asd455 fe v1",
         "rating": "assets/img/stars.png",
-        "oldPrice": "299,00",
-        "price": "399,00",
-        "time": "3x de R$ 133,00",
+        "oldPrice": "249,00",
+        "price": "159,00",
+        "time": "3x de R$ 53,00",
         "flag": false
     },
     {
-        "img": "assets/img/tenis.png",
-        "name": "Tênis couro puma r698 q4 v2",
+        "img": "assets/img/red_shoes.png",
+        "name": "Tênis Vermelho Adidas r547 q9 v7",
         "rating": "assets/img/stars.png",
-        "oldPrice": "299,00",
-        "price": "399,00",
-        "time": "3x de R$ 133,00",
+        "oldPrice": "159,00",
+        "price": "99,00",
+        "time": "3x de R$ 33,00",
         "flag": false
     }
 ]

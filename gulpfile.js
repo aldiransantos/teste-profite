@@ -2,20 +2,14 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var watch = require('gulp-watch');
 
-//task para o sass
+gulp.task('default', ['sass', 'watch']);
+
 gulp.task('sass', function () {
-    return gulp.src('dev/sass/*.sass')
+    return gulp.src('assets/styles/*.sass')
         .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
-        .pipe(gulp.dest('dist/css/'));
+        .pipe(gulp.dest('assets/styles/'));
 });
 
-//task para o watch
 gulp.task('watch', function () {
-    gulp.watch('dev/sass/*.sass', ['sass']);
+    gulp.watch('assets/styles/*.sass', ['sass']);
 });
-
-gulp.task('default', function () {
-
-});
-
-// gulp.task('default', ['sass', 'watch']);

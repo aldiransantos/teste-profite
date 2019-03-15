@@ -1,2 +1,556 @@
-h1 
+* 
+  box-sizing: border-box
+
+
+.row::after 
+  content: ""
+  clear: both
+  display: table
+
+
+[class*="col-"] 
+  float: left
+  padding: 15px
+
+
+html 
+  font-family: 'Ubuntu', sans-serif
+
+
+/* For mobile phones: */
+
+.header 
+  overflow: hidden
+  background-color: #fff
+  position: relative
+  .icon 
     color: red
+    text-decoration: none
+    padding: 14px 16px
+    font-size: 17px
+    display: block
+  
+  a.icon 
+    display: block
+    position: absolute
+    top: 0
+    padding: 14px 16px 0
+  
+
+
+.cart 
+  display: block
+  position: absolute
+  top: 0
+  padding: 14px 16px 0
+
+
+.header 
+  a.icon 
+    left: 0
+  
+  #options 
+    .language 
+      display: flex
+    
+    display: none
+    a 
+      color: #7A7A7A
+      padding: 14px
+      text-decoration: none
+      font-size: 17px
+      display: block
+      &:first-child 
+        display: flex
+        align-items: center
+        span 
+          margin-left: 10px
+        
+      
+    
+  
+  overflow: hidden
+  position: relative
+  a 
+    &.icon 
+      display: block
+      position: absolute
+      right: 0
+      top: 0
+    
+    &:hover 
+      color: black
+    
+  
+
+
+.active 
+  background-color: #4CAF50
+  color: blue
+
+
+.header .search 
+  position: relative
+  padding: 0 15px 15px
+  input 
+    border-width: 0
+    border-bottom: 1px solid #7A7A7A
+    font-size: 16px
+    position: relative
+    top: 20px
+    margin-bottom: 20px
+    padding-bottom: 10px
+    width: 100%
+    &:focus 
+      outline: none
+      border-bottom-color: #2EC4B6
+      transition: .8s all
+    
+  
+  svg 
+    float: right
+    position: absolute
+    top: 15px
+    right: 15px
+  
+
+
+.cart 
+  right: 0
+  span 
+    border-radius: 50%
+    background-color: #2EC4B6
+    color: #fff
+    padding: 0 5px
+  
+
+
+.logo 
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: 15px 15px 0
+
+
+.menu 
+  ul 
+    list-style-type: none
+    margin: 0
+    padding: 0
+  
+  li 
+    padding: 8px
+    margin-bottom: 7px
+    background-color: #33b5e5
+    color: #ffffff
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)
+    &:hover 
+      background-color: #0099cc
+    
+  
+
+
+.banner 
+  position: relative
+  height: 30vh
+
+
+.banner-container 
+  height: 34vh
+
+
+.banner 
+  a 
+    display: none
+  
+  .slide 
+    img 
+      background: #2EC4B6
+      background-blend-mode: multiply
+      height: -webkit-fill-available
+      width: 100%
+    
+    .caption 
+      position: absolute
+      padding: 10px 20px
+      font-size: 2.125em
+      font-weight: bold
+      color: #fff
+      p::after 
+        content: ""
+        width: 44px
+        background-color: #FF9F1C
+        border: 3px solid #FF9F1C
+        position: relative
+        display: flex
+        top: 8px
+      
+    
+  
+  .dots 
+    position: relative
+    text-align: center
+    margin-top: -30px
+    .dot 
+      height: 10px
+      width: 10px
+    
+  
+
+
+.products 
+  padding: 0 15px
+  h1 
+    display: block
+    color: #011627
+    font-size: 24px
+    font-weight: bold
+    padding: 40px 20px 20px
+    &::after 
+      content: ""
+      width: 44px
+      background-color: #FF9F1C
+      border: 3px solid #FF9F1C
+      position: relative
+      display: flex
+      top: 8px
+    
+  
+  .slider-products 
+    min-width: 320px
+    overflow: auto
+  
+  .produto 
+    .produto-item 
+      padding: 10px 15px
+    
+    div 
+      &:first-child 
+        padding-left: 0
+      
+      &:last-child 
+        padding-right: 0
+      
+    
+  
+  .dots-content 
+    text-align: center
+    margin-top: 20px
+    margin-bottom: 10px
+  
+  .dots span 
+    font-size: 50px
+    width: 10px
+    color: #BDBDBD
+    &.active 
+      color: #FF9F1C
+    
+  
+
+
+.shelf 
+  display: flex
+  text-align: center
+
+
+.produto 
+  max-width: 50%
+  display: flex
+  img 
+    width: 100%
+    padding: 20px
+  
+  p 
+    text-transform: uppercase
+    font-weight: 600
+    margin-bottom: 10px
+    color: #7A7A7A
+  
+  .oldPrice, .time 
+    color: #7A7A7A
+  
+  .oldPrice 
+    font-size: 17px
+    margin-bottom: 5px
+    text-decoration-line: line-through
+  
+  .price 
+    color: #2EC4B6
+    font-size: 22px
+    margin-bottom: 10px
+    font-weight: 600
+  
+  .time 
+    font-size: 17px
+    margin-bottom: 5px
+  
+  button 
+    display: flex
+    justify-content: space-evenly
+    align-items: center
+    background-color: #2EC4B6
+    border-width: 0
+    border-radius: 5px
+    color: #fff
+    font-size: 20px
+    text-transform: uppercase
+    padding: 2px 12px
+    width: 100%
+  
+
+
+.banner-container 
+  max-width: 599px
+  position: relative
+  margin: auto
+
+
+.slide 
+  display: none
+
+
+.prev 
+  cursor: pointer
+  position: absolute
+  top: 50%
+  width: auto
+  margin-top: -22px
+  padding: 16px
+  color: white
+  font-weight: bold
+  font-size: 18px
+  transition: 0.6s ease
+  border-radius: 0 3px 3px 0
+  user-select: none
+
+
+.next 
+  cursor: pointer
+  position: absolute
+  top: 50%
+  width: auto
+  margin-top: -22px
+  padding: 16px
+  color: white
+  font-weight: bold
+  font-size: 18px
+  transition: 0.6s ease
+  border-radius: 0 3px 3px 0
+  user-select: none
+  right: 0
+  border-radius: 3px 0 0 3px
+
+
+.prev:hover, .next:hover 
+  background-color: rgba(0, 0, 0, 0.8)
+
+
+.text 
+  color: #f2f2f2
+  font-size: 15px
+  padding: 8px 12px
+  position: absolute
+  bottom: 8px
+  width: 100%
+  text-align: center
+
+
+.dot 
+  cursor: pointer
+  height: 15px
+  width: 15px
+  margin: 0 2px
+  background-color: #bbb
+  border-radius: 50%
+  display: inline-block
+  transition: background-color 0.6s ease
+
+
+.active, .dot:hover 
+  background-color: #FF9F1C
+
+
+.fade 
+  -webkit-animation-name: fade
+  -webkit-animation-duration: 1.5s
+  animation-name: fade
+  animation-duration: 1.5s
+
+
+@-webkit-keyframes fade 
+  from 
+    opacity: 0.4
+  
+
+  to 
+    opacity: 1
+  
+
+
+
+@keyframes fade 
+  from 
+    opacity: 0.4
+  
+
+  to 
+    opacity: 1
+  
+
+
+
+.footer 
+  background-color: #011627
+  color: #fff
+  h1 
+    display: block
+    color: #fff
+    font-size: 24px
+    font-weight: bold
+    padding: 40px 20px 20px
+    &::after 
+      content: ""
+      width: 44px
+      background-color: #FF9F1C
+      border: 3px solid #FF9F1C
+      position: relative
+      display: flex
+      margin-top: 10px
+      top: 12px
+    
+  
+  .location 
+    display: flex
+    .sp, .rj 
+      color: #fff
+      width: 50%
+      padding: 20px 20px 0
+    
+    .sp p:first-child, .rj p:first-child 
+      font-size: 20px
+      font-weight: bold
+    
+    .sp p, .rj p 
+      margin-bottom: 10px
+    
+  
+  a 
+    display: flex
+    justify-content: space-evenly
+    align-items: center
+    margin: 40px auto
+    background-color: #FF9F1C
+    border-width: 0
+    border-radius: 5px
+    color: #fff
+    font-size: 16px
+    font-weight: 500
+    text-align: center
+    text-decoration: none
+    text-transform: uppercase
+    padding: 12px
+    width: 290px
+    height: 60px
+  
+  .by 
+    width: 290px
+    display: flex
+    justify-content: space-between
+    margin: 0 auto
+    .by-profite img, .by-vtex img 
+      width: 80px
+    
+  
+  .line 
+    background-color: #2EC4B6
+    height: 5px
+    margin-top: 20px
+  
+
+
+/* For desktop: */
+@media (min-width: 768px) 
+  .banner 
+    height: 40vh
+    background-color: #011627
+  
+  .banner-container 
+    height: 40vh
+    background-color: #011627
+    min-width: 1024px
+  
+  .banner 
+    .slide 
+      background-color: #011627
+      width: 100%
+      height: 40vh
+      .caption 
+        position: relative
+        width: 50%
+        p 
+          display: flex
+          align-items: center
+          justify-content: center
+          height: 100%
+          &::after 
+            content: ""
+            width: 44px
+            background-color: #FF9F1C
+            border: 3px solid #FF9F1C
+            position: absolute
+            top: 25vh
+            left: 20px
+          
+        
+      
+      .img 
+        width: 50%
+      
+    
+    .dots 
+      margin-top: -50px
+    
+    .slide img 
+      width: auto
+    
+  
+  .products 
+    h1, .produto 
+      max-width: 60%
+      margin: 0 auto
+    
+    h1 
+      padding: 40px 0 20px
+    
+    .slider-products 
+      margin-bottom: 20px
+    
+  
+  .footer 
+    h1 
+      max-width: 60%
+      margin: 0 auto
+    
+    .footer-info 
+      max-width: 60%
+      margin: 0 auto
+      display: flex
+      align-items: center
+      position: relative
+    
+    .contacts 
+      margin-left: 50px
+    
+    a 
+      margin: 25px auto
+      width: 265px
+    
+    .by 
+      width: 230px
+      justify-content: space-evenly
+      margin: 0
+      position: absolute
+      right: 0
+      bottom: 20px
+    
+  

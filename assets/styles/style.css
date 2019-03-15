@@ -18,11 +18,6 @@ html {
 }
 
 /* For mobile phones: */
-
-[class*="col-"] {
-    width: 100%;
-}
-
 .header {
     overflow: hidden;
     background-color: #fff;
@@ -161,7 +156,6 @@ html {
 }
 
 .banner {
-    background-color: #000;
     position: relative;
     height: 30vh;
 }
@@ -189,7 +183,7 @@ html {
     color: #fff;
 }
 
-.banner .slide .caption::after {
+.banner .slide .caption p::after {
     content: "";
     width: 44px;
     background-color: #FF9F1C;
@@ -210,6 +204,10 @@ html {
     width: 10px;
 }
 
+.products {
+    padding: 0 15px;
+}
+
 .products h1 {
     display: block;
     color: #011627;
@@ -226,6 +224,23 @@ html {
     position: relative;
     display: flex;
     top: 8px;
+}
+
+.products .slider-products {
+    min-width: 320px;
+    overflow: auto;
+}
+
+.products .produto .produto-item {
+    padding: 10px 15px;
+}
+
+.products .produto div:first-child {
+    padding-left: 0;
+}
+
+.products .produto div:last-child {
+    padding-right: 0;
 }
 
 .products .dots-content {
@@ -250,8 +265,8 @@ html {
 }
 
 .produto {
-    width: 50%;
-    padding: 10px 15px;
+    max-width: 50%;
+    display: flex;
 }
 
 .produto img {
@@ -313,39 +328,40 @@ html {
     display: none;
 }
 
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
 
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
-
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
 }
 
 .dot {
@@ -472,61 +488,84 @@ html {
     margin-top: 20px;
 }
 
-@media only screen and (min-width: 768px) {
-    /* For desktop: */
-    .col-1 {
-        width: 8.33%;
-    }
-    .col-2 {
-        width: 16.66%;
-    }
-    .col-3 {
-        width: 25%;
-    }
-    .col-4 {
-        width: 33.33%;
-    }
-    .col-5 {
-        width: 41.66%;
-    }
-    .col-6 {
-        width: 50%;
-    }
-    .col-7 {
-        width: 58.33%;
-    }
-    .col-8 {
-        width: 66.66%;
-    }
-    .col-9 {
-        width: 75%;
-    }
-    .col-10 {
-        width: 83.33%;
-    }
-    .col-11 {
-        width: 91.66%;
-    }
-    .col-12 {
-        width: 100%;
-    }
 
+/* For desktop: */
+@media (min-width: 768px) {
+    .banner,
     .banner-container {
-        min-width: 100%;
+        height: 40vh;
+        background-color: #011627;
     }
-
-    .banner {
-        background-color: transparent;
+    .banner-container {
+        min-width: 1024px;
     }
-
     .banner .slide {
-        width: 100%; 
+        background-color: #011627;
+        width: 100%;
         height: 40vh;
     }
-
-    .bg-img {
-        background: url("../img/img_mountains_wide.jpg");
-        background-repeat: no-repeat;
-        background-size: auto;
+    .banner .slide .caption {
+        position: relative;
+        width: 50%;
+    }
+    .banner .slide .caption p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    .banner .slide .caption p::after {
+        content: "";
+        width: 44px;
+        background-color: #FF9F1C;
+        border: 3px solid #FF9F1C;
+        position: absolute;
+        top: 25vh;
+        left: 20px;
+    }
+    .banner .slide .img {
+        width: 50%;
+    }
+    .banner .dots {
+        margin-top: -50px;
+    }
+    .banner .slide img {
+        width: auto;
+    }
+    .products h1,
+    .products .produto {
+        max-width: 60%;
+        margin: 0 auto;
+    }
+    .products h1 {
+        padding: 40px 0 20px;
+    }
+    .products .slider-products {
+        margin-bottom: 20px;
+    }
+    .footer h1,
+    .footer .footer-info {
+        max-width: 60%;
+        margin: 0 auto;
+    }
+    .footer .footer-info {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    .footer .contacts {
+        margin-left: 50px;
+    }
+    .footer a {
+        margin: 25px auto;
+        width: 265px;
+    }
+    .footer .by {
+        width: 230px;
+        justify-content: space-evenly;
+        margin: 0;
+        position: absolute;
+        right: 0;
+        bottom: 20px;
     }
 }
