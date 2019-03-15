@@ -161,11 +161,53 @@ html {
 }
 
 .banner {
-    background-color: #2EC4B6;
+    background-color: #000;
+    position: relative;
+    height: 30vh;
 }
 
-.banner img {
+.banner-container {
+    height: 34vh;
+}
+
+.banner a {
+    display: none;
+}
+
+.banner .slide img {
+    background: #2EC4B6;
+    background-blend-mode: multiply;
+    height: -webkit-fill-available;
     width: 100%;
+}
+
+.banner .slide .caption {
+    position: absolute;
+    padding: 10px 20px;
+    font-size: 2.125em;
+    font-weight: bold;
+    color: #fff;
+}
+
+.banner .slide .caption::after {
+    content: "";
+    width: 44px;
+    background-color: #FF9F1C;
+    border: 3px solid #FF9F1C;
+    position: relative;
+    display: flex;
+    top: 8px;
+}
+
+.banner .dots {
+    position: relative;
+    text-align: center;
+    margin-top: -30px;
+}
+
+.banner .dots .dot {
+    height: 10px;
+    width: 10px;
 }
 
 .products h1 {
@@ -261,7 +303,7 @@ html {
     width: 100%;
 }
 
-.slideshow-container {
+.banner-container {
     max-width: 599px;
     position: relative;
     margin: auto;
@@ -271,7 +313,6 @@ html {
     display: none;
 }
 
-/* 
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -306,7 +347,6 @@ html {
   width: 100%;
   text-align: center;
 }
-*/
 
 .dot {
     cursor: pointer;
@@ -432,46 +472,6 @@ html {
     margin-top: 20px;
 }
 
-@media only screen and (min-width: 600px) {
-    /* For tablets: */
-    .col-s-1 {
-        width: 8.33%;
-    }
-    .col-s-2 {
-        width: 16.66%;
-    }
-    .col-s-3 {
-        width: 25%;
-    }
-    .col-s-4 {
-        width: 33.33%;
-    }
-    .col-s-5 {
-        width: 41.66%;
-    }
-    .col-s-6 {
-        width: 50%;
-    }
-    .col-s-7 {
-        width: 58.33%;
-    }
-    .col-s-8 {
-        width: 66.66%;
-    }
-    .col-s-9 {
-        width: 75%;
-    }
-    .col-s-10 {
-        width: 83.33%;
-    }
-    .col-s-11 {
-        width: 91.66%;
-    }
-    .col-s-12 {
-        width: 100%;
-    }
-}
-
 @media only screen and (min-width: 768px) {
     /* For desktop: */
     .col-1 {
@@ -509,5 +509,24 @@ html {
     }
     .col-12 {
         width: 100%;
+    }
+
+    .banner-container {
+        min-width: 100%;
+    }
+
+    .banner {
+        background-color: transparent;
+    }
+
+    .banner .slide {
+        width: 100%; 
+        height: 40vh;
+    }
+
+    .bg-img {
+        background: url("../img/img_mountains_wide.jpg");
+        background-repeat: no-repeat;
+        background-size: auto;
     }
 }
