@@ -1,0 +1,39 @@
+[
+    {
+        "img": "assets/img/tenis.png",
+        "name": "Tênis couro puma r698 q4 v2",
+        "rating": "assets/img/stars.png",
+        "oldPrice": "299,00",
+        "price": "399,00",
+        "time": "3x de R$ 133,00",
+        "flag": false
+    },
+    {
+        "img": "assets/img/tenis.png",
+        "name": "Tênis couro puma r698 q4 v2",
+        "rating": "assets/img/stars.png",
+        "oldPrice": "299,00",
+        "price": "399,00",
+        "time": "3x de R$ 133,00",
+        "flag": true
+    },
+    {
+        "img": "assets/img/tenis.png",
+        "name": "Tênis couro puma r698 q4 v2",
+        "rating": "assets/img/stars.png",
+        "oldPrice": "299,00",
+        "price": "399,00",
+        "time": "3x de R$ 133,00",
+        "flag": false
+    },
+    {
+        "img": "assets/img/tenis.png",
+        "name": "Tênis couro puma r698 q4 v2",
+        "rating": "assets/img/stars.png",
+        "oldPrice": "299,00",
+        "price": "399,00",
+        "time": "3x de R$ 133,00",
+        "flag": false
+    }
+
+]
