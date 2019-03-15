@@ -18,8 +18,8 @@
         "flag": true
     },
     {
-        "img": "assets/img/running_shoes.png",
-        "name": "Tênis nike runnig asd455 fe v1",
+        "img": "assets/img/black_shoes.png",
+        "name": "Tênis preto puma r698 q4 v2",
         "rating": "assets/img/stars.png",
         "oldPrice": "249,00",
         "price": "159,00",
@@ -27,8 +27,8 @@
         "flag": false
     },
     {
-        "img": "assets/img/red_shoes.png",
-        "name": "Tênis Vermelho Adidas r547 q9 v7",
+        "img": "assets/img/blue_tennis.png",
+        "name": "Tênis puma azul adf8 a3 v9",
         "rating": "assets/img/stars.png",
         "oldPrice": "159,00",
         "price": "99,00",
